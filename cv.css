@@ -1,7 +1,9 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
-body {background-color: hsl(44, 24%, 98%);}
-section, footer {padding: 2%; border-radius: 1.5%;}
+body {background-color: hsla(0, 0%, 100%, 0.986);}
+section, footer {
+    background-color: #bad6f6;
+    padding: 2%; border-radius: 1.5%;}
 p {text-align: justify; text-justify: inter-word;}
 h1 {margin-bottom: 1%;}
 
@@ -9,7 +11,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: spa;
 }
 
 header img {
@@ -19,7 +21,6 @@ header img {
 }
 
 #intro {
-    background-color: hsl(60, 100%, 80%);
     margin: 2%;
 }
 
@@ -32,11 +33,23 @@ header img {
 }
 
 #job {
-    background-color: hsl(240, 100%, 80%);
     margin-right: 1%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
+}
+
+#job div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    column-gap: 10px;;
+}
+
+#job img {
+    height: auto; width: 20%;
 }
 
 #firstHalfRight {
@@ -48,12 +61,10 @@ header img {
 }
 
 #informatic_skills {
-    background-color: hsl(0, 100%, 80%);
     margin-bottom: 1%;
 }
 
 #other_skills {
-    background-color: hsl(300, 100%, 80%);
     margin-top: 1%;
 }
 
@@ -66,7 +77,6 @@ header img {
 }
 
 #education {
-    background-color: hsl(120, 100%, 80%);
     margin-right: 1%;
 }
 
@@ -97,7 +107,6 @@ header img {
 #education img[src*='uab'] {width: 100%; margin: auto;}
 
 #research {
-    background-color: hsl(39, 100%, 80%);
     margin-left: 1%;
     display: flex;
     flex-direction: column;
@@ -105,7 +114,6 @@ header img {
 }
 
 footer {
-    background-color: blueviolet;
     margin: 2%;
 }
 
