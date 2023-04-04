@@ -1,14 +1,41 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
+/*General rules*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-body {background-color: hsla(0, 0%, 100%, 0.986);}
+body {background: rgb(35,44,116);
+    background: linear-gradient(180deg, rgba(35,44,116,1) 0%, rgba(170,217,236,1) 100%);
+}
+
 header, section, footer {
-    background-color: #bad6f6;
-    padding: 2%; border-radius: 1.5%;}
-p {text-align: justify; text-justify: inter-word;}
-h1 {margin-bottom: 2%;}
+    background-color: #FFFFFF;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5%;
+}
 
+#job img:hover {
+    transform: scale(2);
+    position: absolute;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1 {margin-bottom: 2%;}
 .date {font-weight: bold;}
 .place {font-style: italic;}
+
+/*Rules by section accoding to document order*/
 
 header {
     display: flex;
@@ -17,20 +44,17 @@ header {
     align-items: center;
     position: sticky;
     top: 0px;
-    margin: 2%;
 }
-
 header img {
     border-radius: 25%;
     width: 10%;
     height: 10%;
 }
 
-#intro {
-    margin: 2%;
-}
+#intro {margin-top: 4%;}
 
 #firstHalf {
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,25 +63,24 @@ header img {
 }
 
 #job {
-    margin-right: 1%;
+    margin: 0 1% 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    row-gap: 20px;
     height: 100%;
     flex: 2 1 0;
 }
-
 #job div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    column-gap: 10px;
+    column-gap: 20px;
 }
-
 #job img {
-    height: auto; width: 20%;
+    height: auto; width: 30%;
 }
 
 #firstHalfRight {
@@ -65,10 +88,9 @@ header img {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    padding-left: 1%;
+    padding-left: 2%;
     flex: 1 1 0;
 }
-
 ul {
     list-style-position: inside;
     display: flex;
@@ -76,16 +98,13 @@ ul {
     justify-content: space-evenly;
     height: 90%;
  }
-
-
 #informatic_skills {
-    margin-bottom: 1%;
+    margin: 0 0 2% 0;
     padding: 5%;
     flex: 1 1 0;
 }
-
 #other_skills {
-    margin-top: 1%;
+    margin: 2% 0 0 0;
     padding-left: 5%;
     flex: 1 1 0;
 }
@@ -99,7 +118,7 @@ ul {
 }
 
 #education {
-    margin-right: 1%;
+    margin: 0 1% 0 0;
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
@@ -127,15 +146,11 @@ ul {
 #education img[src*='uab'] {width: 100%; margin: auto;}
 
 #research {
-    margin-left: 1%;
+    margin: 0 0 0 1%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1 1 0;
-}
-
-footer {
-    margin: 2%;
 }
 
 footer div {
@@ -150,6 +165,6 @@ footer a {
     text-align: center;
 }
 
-footer div img {
+footer img {
     width: 20%;
 }
