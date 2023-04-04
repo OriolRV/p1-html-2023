@@ -1,23 +1,29 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
 body {background-color: hsla(0, 0%, 100%, 0.986);}
-section, footer {
+header, section, footer {
     background-color: #bad6f6;
     padding: 2%; border-radius: 1.5%;}
 p {text-align: justify; text-justify: inter-word;}
-h1 {margin-bottom: 1%;}
+h1 {margin-bottom: 2%;}
+
+.date {font-weight: bold;}
+.place {font-style: italic;}
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: spa;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    margin: 2%;
 }
 
 header img {
     border-radius: 25%;
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
 }
 
 #intro {
@@ -38,6 +44,8 @@ header img {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    height: 100%;
+    flex: 2 1 0;
 }
 
 #job div {
@@ -45,7 +53,7 @@ header img {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    column-gap: 10px;;
+    column-gap: 10px;
 }
 
 #job img {
@@ -58,14 +66,28 @@ header img {
     justify-content: space-between;
     align-items: stretch;
     padding-left: 1%;
+    flex: 1 1 0;
 }
+
+ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90%;
+ }
+
 
 #informatic_skills {
     margin-bottom: 1%;
+    padding: 5%;
+    flex: 1 1 0;
 }
 
 #other_skills {
     margin-top: 1%;
+    padding-left: 5%;
+    flex: 1 1 0;
 }
 
 #secondHalf {
@@ -78,22 +100,20 @@ header img {
 
 #education {
     margin-right: 1%;
-}
-
-#education > div {
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     row-gap: 10px;
 }
 
-#education div div {
+#education div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#education div div p {
+#education div p {
     width: 85%;
 }
 
@@ -111,6 +131,7 @@ header img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1 1 0;
 }
 
 footer {
